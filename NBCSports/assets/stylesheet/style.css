@@ -1,0 +1,566 @@
+* {
+    font-family: Arial,Helvetica,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+a,p {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0px;
+}
+
+ul {
+    list-style:none;
+}
+
+#container {
+    position: relative;
+}
+
+#header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+    background-color: #181B1F;
+}
+
+#logo, .logo {
+    width:17%;
+    padding: 4px 0px 0px;
+    margin-left: 125px;
+}
+
+#header #logo img {
+    width: 88%;
+}
+
+#nav {
+    width: 73%;
+    margin-left: -19px;
+}
+
+#nav ul {
+    list-style: none;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#nav ul li {
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0px -3px;
+    position: relative;
+} 
+
+#nav ul li a {
+    display: inline-block;
+    padding: 20px 15px 18px;
+    color: #fff;
+    letter-spacing: 0.4px;
+    position: relative;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+#nav ul li a:hover {
+    color: #FDB913;
+    background-color: #252B33;
+}
+
+#nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-top: 2px solid #FDB913;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#nav ul li a:hover::before {
+    display: block;
+}
+
+#nav ul li:hover .drop {
+    display: block;
+}
+
+.drop {
+    position: absolute;
+    height: 350px;
+    width: 300%;
+    top: 104%;
+    overflow-y: scroll; 
+    left: -70%;
+    display: none;
+}
+
+.drop li {
+    display: block;
+    background-color: black;
+    width:100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 16px;
+    border-bottom: 0.5px solid rgba(205, 205, 205, 0.5);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.drop li:hover {
+    color: #FDB913;
+}
+
+.content {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.sidebar1 {
+    position: fixed;
+    top: 8%;
+    height: 85%;
+    width: 13%;
+    left: 8%;
+    border-top: 2px solid #FDB913;
+}
+
+.sidehead {
+    background-color: #E6E6E6;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.sidehead a {
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 15px 15px;
+}
+
+.sidehead a h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+
+.sidecontent {
+    height:98%;
+    overflow-y: scroll;
+}
+
+.live {
+    background-color: #CE1F41;
+}
+
+.live >h4 , .upcoming > h4 {
+    text-align: center;
+    padding:5px;
+    display: block;
+    color: #fff;    
+}
+
+.live .liveshows, .upevents {
+    background-color: #E6E6E6;
+    margin-left: 4px;
+    border-bottom: 1px solid #b1a4a4;
+}
+
+.live .liveshows a, .upevents a {
+    display: block;
+    color: black;
+    font-weight: 600;
+    font-size: 13px;
+    padding:15px 15px;
+}
+
+.live .liveshows a span , .upevents a span {
+    font-weight: 400;
+    display: block;
+}
+
+.upcoming {
+    background-color: #1F7EDF;
+}
+
+.live .liveshows a:hover , .upevents a:hover {
+    background-color: #CDCDCD;
+}
+
+.maincontent {
+    margin-top: 4%;
+    margin-left: 22%;
+}
+
+.main {
+    width: 60%;
+    margin-top: 0;
+}
+
+.event1, .topvideos {
+    margin-top: 0;
+    border-top: 2px solid #FDB913;
+    width: 100%;
+    background-color: #fff;
+}
+
+.oneleft, .twoleft {
+    display: inline-block;
+    width: 67%;
+    margin: 2% 0% 0% 2%;
+}
+
+.oneleft img {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.oneleft h3 {
+    font-size: 24px;
+    margin: 10px 0px;
+}
+
+.oneleft, .twoleft p {
+    font-size: 14.5px;
+}
+
+.oneright {
+    margin-left: 15px;
+    margin-top: 5%;
+    width: 28%;
+    display: inline-block;
+}
+
+.oneright img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.oneright, .oneright1 {
+    margin-bottom: 30px;
+}
+
+.oneright, .oneright1 span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.topvideos {
+    border: 0;
+    display: block;
+    padding-left: 2%;
+    height: 240px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.videohead h3 {
+    padding: 2% 0%;
+    display: block;
+}
+
+.video {
+    width: 23.5%;
+    margin-right: 7px;
+}
+
+.video img {
+    display: block;
+    width: 100%;
+}
+
+.video span {
+    font-size: 14px;
+}
+
+#sidebar2 {
+    width: 25%;
+    display: inline;
+    box-sizing: border-box;
+}
+
+#sidebar2 .forpad {
+    border-top: 2px solid #FDB913;
+    background-color: #fff;
+    margin-top: 0;
+    margin-left: 4%;
+    padding: 0px 15px;
+}
+
+.forpad .sidehead2 {
+    text-align: center;
+    padding: 18px 10px;
+}
+
+.forpad .sidehead2 h2 {
+    font-size: 16px;
+}
+
+.forpad ul {
+    list-style: none;
+}
+
+.forpad ul li {
+    padding: 15px 10px;
+    border-top: 1px solid #CDCDCD;
+}
+
+.forpad .sidenews a {
+    display: block;
+    font-size: 14px;
+    /* text-align: center; */
+}
+
+.event2 {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 10px;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.event2 .twoleft {
+    width: 48%;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.event2 h3 a {
+    font-size: 16px;
+    display: block;
+    padding: 10px 0px;
+}
+
+.event2 .twoleft img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.event2 h3 a {
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+}
+
+.event2 h4 {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px; 
+}
+
+.event2 .twoleft span {
+    font-size: 14px;
+}
+
+.event2 .tworight {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.event2 .tworight .tworight1 {
+    width: 48%;
+    box-sizing: border-box;
+    margin: 10px 4px 8px 0px;
+    display: inline-block;
+}
+
+.event2 .tworight .tworight1 img {
+    width:100%;
+    margin: 0px 0px 10px;
+    display: inline-block;
+}
+
+.event2 .tworight .tworight1 span {
+    font-size: 14px;
+}
+
+.event3 {
+    width:100%;
+    margin: 10px 0px;
+}
+
+.event3 .leftlist {
+    width: 48%;
+    float: left;
+    box-sizing: border-box;
+    margin: 0px 10px 0px 0px;
+    padding:10px;
+    background-color: #fff;
+}
+
+.event3 .leftlist h4, .rightlist h4 {
+    margin-bottom: 10px;
+}
+
+.event3 .leftlist .llcontent {
+    width: 100%;
+    display: block;
+    margin: 10px 0px;
+}
+
+.event3 .leftlist .llcontent img {
+    float: left;
+    width:50%;
+}
+
+.event3 .leftlist .llcontent span {
+    font-size: 14px;
+    width: 48%;
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+}
+
+.event3 .rightlist {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    padding: 10px;
+    height: 565px;
+    background-color: #fff;
+}
+
+.event3 .rightlist .righttop, .rightlist .rightbottom {
+    width: 100%;
+    margin: 30px 0px;
+    box-sizing: border-box;
+}
+
+.righttop .rightfour, .rightbottom .rightfour {
+    width: 47%;
+    float: left;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.righttop .rightfour img, .rightbottom .rightfour img {
+    width: 100%;
+}
+
+.rightlist .rightbottom {
+    margin-top: 100px;
+}
+
+.bestplayer {
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.bestplayer .forpad {
+    background-color: #fff;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+
+.bestplayer h3 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+}
+
+.bestplayer .playerinfo {
+    margin-top: 30px;
+}
+
+.bestplayer .infohead {
+    border-top: 4px solid #000;
+    background-color: #E6E6E6;
+}
+
+.bestplayer .infohead img {
+    width: 57px;
+}
+
+.bestplayer .infohead span a {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.bestplayer .infohead .spandark {
+    display: block;
+    line-height: 30px;
+    font-size: 14px;
+    box-sizing: border-box;
+    height: 31px;
+    background-color: #B0B0B0;
+    padding: 0px 15px;
+    background-size: 100%;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.bestplayer .infohead .spandark img {
+    width: 30px;
+    vertical-align: middle;
+    display: inline;   
+    margin: 0px 10px;
+}
+
+.playerinfo .info {
+    padding: 4px;
+    font-size: 14px;
+}
+
+.playerinfo .info strong {
+    display: block;
+    margin: 10px 0px 20px;
+}
+
+.playerinfo .headdown {
+    font-size: 10px;
+    display: block;
+    margin: 10px 0px;
+}
+
+.more {
+    box-sizing: border-box;
+}
+
+.more .forpa {
+    padding-left: 10px;
+}
+
+.more a {
+    display: block;
+    width: 100%;
+    background-color: #B0B0B0;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}

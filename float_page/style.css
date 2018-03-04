@@ -1,0 +1,39 @@
+* {
+    font-family: consolas;
+}
+
+h1 {
+    text-align: center;
+    background-color: blueviolet;
+}
+
+div {
+    text-align: center;
+}
+
+.clearfix::after {
+    content:" ";
+    clear: both;
+    display: block;
+}
+
+.div_1 {
+    border: 2px solid black;
+    float: left;
+    width: 45%;
+    background-color: aquamarine;
+}
+
+.div_2 {
+    border: 2px solid black;
+    background-color: aqua;
+    width:45%;
+    float: right;
+    /* margin:0px 10px; */
+}
+
+.later {
+    margin:10px 0px;
+    border:2px solid black;
+    background-color: beige;
+}

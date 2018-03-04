@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Quicksand;
+    padding: 0;
+    transition: 0.3s;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: #181B1F;
+    /* height: 50px;    */
+}
+
+.rel {
+    position: relative;
+    display: block;
+}
+
+.nav {
+    right: 0;
+    display: block;
+    top: 0;
+}
+
+.nav ul li {
+    float: left;
+    display: block;
+}
+
+.nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.nav ul li:hover {
+    background-color: rgb(39, 43, 48);
+}
+
+
+.main {
+    margin-top: 3.5%;
+}
+
+#login {
+    width: 50%;
+    margin: 100px auto 0px;
+    display: none;
+    animation-name: example;
+    /* animation-duration: 4s; */
+    /* background-color: rgba(24, 27, 31, 0.5); */
+}
+
+#login:target {
+    display: block;
+    animation: example 2s;
+}
+
+.signin {
+    width: 50%;
+    margin: 100px auto 0px;
+    /* background-color: rgba(24, 27, 31, 0.5); */
+}
+
+.input {
+    display: block;
+    width: 80%;
+    font-size: 16px;
+    padding: 20px;
+    margin: 10px auto;
+}
+
+.submit {
+    margin: 10px auto;
+    display: block;
+    width: 20%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #181B1F;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px; 
+}
+
+.submit:focus {
+    outline: none;
+}
+
+@keyframes example {
+    0%   {top: 0px;}
+    25%  {left:200px; top: 10px;}
+    100% {left: 500px; top: 100px;}
+}
