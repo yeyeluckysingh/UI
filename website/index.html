@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/stylesheet/stylesheet.css">
+    <title>Testing</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <header>
+            <div id="leftcontainer">
+                <a href="homepage.html">
+                    <h2>हिन्दुस्तान</h2>
+                </a>
+            </div>
+            <div id="rightcontainer">
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>Profile</li>
+                        <li>Contact</li>
+                        <li>Login</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <div id="after">
+        <div id="content">
+        </div>
+        <aside>
+            <h2 id="oldh2">SignIn</h2>
+            <div id="membersign">
+                <form id="signin" action="signinprocess.php" method="post">
+                    <input type="email" name="inemail" class="signinput" placeholder="email">
+                    <input type="password" name="inpass" class="signinput" placeholder="password">
+                    <input type="submit" name="submitin" value="login" class="submitbut">
+                </form>
+            </div>
+            <h2 id="newh2">SignUp</h2>
+            <div id="newsign">
+                <form id="signup" action="process.php" method="post">
+                    <input type="text" name="newfrstname" placeholder="firstname" class="newinput">
+                    <input type="text" name="newlstname" placeholder="lastname" class="newinput">
+                    <input type="email" name="newupemail" placeholder="email" class="newinput">
+                    <input type="password" name="newuppass" placeholder="password" class="newinput">
+                    <input type="password" name="newconfirmuppass" placeholder="confirm password" class="newinput">
+                    <input type="submit" name="signupinfo" value="signup" class="submitbut">
+                </form>
+            </div>
+        </aside>
+    </div>
+
+    <div id="footer">
+        <footer>
+            <a href="https://hi.wikipedia.org/wiki/India">
+                <p>मेरी पहचान मेरा हिन्दुस्तान</p>
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>

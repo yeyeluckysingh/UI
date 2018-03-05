@@ -1,0 +1,504 @@
+/*
+new rgba(219, 61, 61, 0.9);
+old rgba(219, 61, 61, 0.9);
+*/
+* {
+    font-family: consolas;
+}
+
+body {
+    margin:0;
+    padding-top:80px;
+    height:2000px;
+}
+
+#container { 
+    width:100%;
+    position: fixed;
+    top:0px;
+}
+
+header {
+    background-color:rgba(219, 61, 61, 0.9);
+    width:100%;
+    height:76px;
+    border-bottom:2px solid white;
+    box-shadow: 2px 0px 4px 4px rgba(204, 94, 94, 0.8);
+}
+
+#leftcontainer {
+    text-align: center;
+    float:left;
+    text-align: center;
+}
+
+#leftcontainer a {
+    text-decoration: none;
+}
+
+#leftcontainer h2{
+    padding:11px;
+    font-size: 35px;
+    margin:3px;
+    width:100%;
+    color:white;
+    letter-spacing: 0.03em;
+    cursor:pointer;
+}
+
+#leftcontainer h2:hover{
+    color:rgb(227, 84, 29);
+    background-color:white;
+}
+#rightcontainer {
+    position:relative;
+    right:185px;
+}
+
+header ul {
+    list-style: none;
+    float:right;
+}
+
+#rightcontainer li {
+    float: left;
+    margin:3px 18px;
+    padding:5px 8px;
+    color:white;
+    font-weight: bold;
+    font-size: 16px;
+    border-top: 1.8px solid white;
+    border-bottom: 1.8px solid white;
+    letter-spacing: 0.015em;
+    cursor: pointer;
+}
+
+#rightcontainer li:hover {
+    color:rgb(227, 84, 29);
+    background-color: white;
+}
+
+footer {
+    text-align: center;
+    padding:2px;
+    overflow: hidden;
+    border-top: 2px solid white;
+}
+
+footer p{
+    margin:0px;
+    padding:4px;
+    font-size: 22px;
+    overflow: hidden;
+    cursor:pointer;
+    background-color: rgba(219, 61, 61, 0.9);
+}
+
+#after {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+#content {
+    padding:0px;
+    text-align:center;
+    margin-right:0px;
+    background: url('../media/pict--india-asia---vector-stencils-library.png--diagram-flowchart-example.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:80%;
+}
+
+#membersign {
+    border-bottom:3px solid rgba(219, 61, 61, 0.9);
+    padding-bottom: 20px;
+    text-align: center;
+    color:rgba(219, 61, 61, 0.9);
+    font-size: 25px;
+    margin:auto;
+    width:80%;
+    margin-bottom:10px;
+}
+
+.signinput {
+    padding:10px;
+    border:2px solid rgba(219, 61, 61, 0.9);
+    background: transparent;
+    border-radius: 2px;
+    font-weight: bold;
+    margin:5px auto;
+    box-sizing: border-box;
+    width:91%;
+    display: block;
+    border-radius: 2px;
+    color:rgba(219, 61, 61, 0.9);
+    font-size: 15px;
+    transition: 0.3s;    
+}
+
+.newinput {
+    padding:10px;
+    border:2px solid rgba(219, 61, 61, 0.9);
+    background: transparent;
+    border-radius: 2px;
+    margin:5px auto;
+    width:91%;
+    font-weight: bold;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 2px;
+    color:rgba(219, 61, 61, 0.9);
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+input:focus {
+    outline:none;
+    border-radius: 20px;
+}
+
+.submitbut {
+    border:2px solid rgba(219, 61, 61, 0.9);
+    padding:8px 20px;
+    color:rgba(219, 61, 61, 0.9);
+    cursor:pointer;
+    font-size:15px;
+    background-color:white;
+    letter-spacing: 0.045em;
+    box-sizing:content-box;
+    border-radius: 5px;
+    margin-top:5px;
+    max-width:90%;
+    font-weight: bold;
+    transition:.4s;
+}
+
+.submitbut:hover {
+    background-color: rgba(219, 61, 61, 0.9); 
+    color:white;
+    border-radius: 20px;
+}
+
+.submitbut:focus {
+    background-color: rgba(219, 61, 61, 0.9); 
+    color:white;
+    border-radius: 20px;
+    
+}
+input[type="password"]::-webkit-input-placeholder {
+    font-size:15px;
+    color: rgba(219, 61, 61, 0.9);
+    opacity:0.6;
+    font-weight: bold;
+}
+
+input[type="email"]::-webkit-input-placeholder {
+    color: rgba(219, 61, 61, 0.9);
+    font-size:15px;
+    font-weight: bold;
+    opacity:0.6;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+    color: rgba(219, 61, 61, 0.9);
+    font-size:15px;
+    opacity:0.6;
+    font-weight: bold;
+}
+
+#newsign {
+    text-align: center;
+    color:rgba(219, 61, 61, 0.9);
+    font-size: 25px;
+    margin: auto;
+    width: 80%;
+}
+
+aside {
+    padding:0px 50px;
+    margin:10px 90px;
+    text-align:center;
+    color:rgba(219, 61, 61, 0.9);
+    border-left:4px solid rgba(219, 61, 61, 0.9);
+    max-width: 75%;
+    box-sizing: border-box;
+    
+}
+
+#footer {
+    position: fixed;
+    width:100%;
+    bottom: 0;
+    background-color:white;
+}
+
+#footer a{
+    text-decoration: none;
+    color:white;
+}
+
+
+#newh2 {
+    margin:40px 0px 0px 0px;
+}
+
+#oldh2 {
+    margin:0;
+}
+
+@media only screen and (max-width:1280px) {
+    
+    aside {
+        margin:0px 20;
+        height:100%;
+        margin-top: 5%;
+        padding: 0px 50px;
+    }
+    
+    .signinput, .newinput {
+        width:100%;
+        box-sizing: border-box;
+    }
+    
+    #membersign, #newsign {
+        margin:auto;
+        width:100%;
+    }
+    
+    #rightcontainer {
+        right:14%;
+    }    
+    
+    #after {
+        border:none;
+        text-align:center;
+        height:auto;
+    }
+    
+   #rightcontainer li {
+        margin:3px 18px;
+        padding:5px 8px;
+    }
+    
+    #rightcontainer {
+        right:9%;
+    }
+    
+}
+
+@media only screen and (max-width:1000px) {
+    
+    body {
+        padding-top:50px;
+        margin:0px;
+    }
+    
+    #after {
+        display: grid;
+        grid-template-columns: 0% 100%;
+        height:100%;
+        text-align: center;
+    }
+    
+    .signinput, .newinput {
+        max-width: 100%;
+    }
+    
+    header {
+        height:55px;
+    }
+    
+/*
+    #leftcontainer{
+        float: none;
+        text-align: center;
+        position: absolute;
+        left:40%;
+        top:9px;
+    }
+*/
+    
+    #leftcontainer {
+        float:none;
+        text-align:center;
+    }
+    
+    #leftcontainer h2 {
+        border:none;
+        font-size: 25px;
+        border:none;
+        padding:1% 0% 0% 0%;
+    }
+    
+    #leftcontainer h2:hover {
+        color:white;
+        background-color:rgba(219, 61, 61, 0.9);
+    }
+    
+    #membersign, #newsign {
+        width:70%;
+    }
+    
+    #oldh2, #newh2 {
+        font-size:20px;
+        margin:3%;
+    }
+        
+    aside {
+        border:none;
+        padding: 0px;
+        max-width: 100%;
+    }
+    
+    #membersign, #newsign {
+        margin:auto;
+    }
+    
+    #rightcontainer {
+        display: none;
+    }
+    
+    #rightcontainer li {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:470px) {
+    
+    body {
+        padding-top:55px;
+        margin:0px;
+    }
+    
+    #after {
+        display: grid;
+        grid-template-columns: 0% 100%;
+        height:100%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .signinput, .newinput {
+        max-width: 80%;
+    }
+    
+    header {
+        height:55px;
+    }
+  
+    #leftcontainer {
+        float:none;
+        text-align:center;
+    }
+    
+    #leftcontainer h2 {
+        border:none;
+        font-size: 25px;
+        border:none;
+        margin: 0px;
+        padding:2% 0px 0px 0px;
+    }
+    
+    #leftcontainer h2:hover {
+        color:white;
+        background-color:rgba(219, 61, 61, 0.9);
+    }
+    
+    #membersign, #newsign {
+        width:100%;
+    }
+    
+    #oldh2, #newh2 {
+        font-size:20px;
+        margin:3%;
+    }
+        
+    aside {
+        border:none;
+        margin: 0px;
+        padding: 0px;
+        max-width: 100%;
+    }
+    
+    #membersign, #newsign {
+        margin:0px;
+    }
+    
+}
+
+@media only screen and (max-width:370px) {
+    
+    body {
+        padding-top:50px;
+        margin:0px;
+    }
+    
+    #after {
+        display: grid;
+        grid-template-columns: 0% 100%;
+        height:100%;
+        text-align: center;
+    }
+    
+    .signinput, .newinput {
+        max-width: 100%;
+        padding:2%;
+    }
+    
+    header {
+        height:45px;
+    }
+ 
+    #leftcontainer {
+        float:none;
+        text-align:center;
+    }
+    
+    #leftcontainer h2 {
+        border:none;
+        font-size: 20px;
+        border:none;
+        padding:2% 0% 0% 0%;
+    }
+    
+    #leftcontainer h2:hover {
+        color:white;
+        background-color:rgba(219, 61, 61, 0.9);
+    }
+    
+    #membersign, #newsign {
+        width:70%;
+    }
+    
+    .submitbut{
+        padding:3%;
+        font-size: 13px;
+        
+    }
+    #oldh2, #newh2 {
+        font-size:20px;
+        margin:3%;
+    }
+        
+    aside {
+        border:none;
+        padding: 0px;
+        max-width: 100%;
+    }
+    
+    #membersign, #newsign {
+        margin:auto;
+    }
+    
+    #rightcontainer {
+        display: none;
+    }
+    
+    #rightcontainer li {
+        display: none;
+    }
+    
+}
+
